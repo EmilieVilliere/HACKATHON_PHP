@@ -1,4 +1,10 @@
-.card 
+img
 {
-   width: 140px;
+   width: 200px;
+   height: 200px;
+}
+.card
+{
+   width: 200px;
+   height: 400px;
 }
