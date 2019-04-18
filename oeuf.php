@@ -9,7 +9,7 @@ try {
     die('Connexion à la BDD échouée : ' . $e->getMessage());
 }
 $requestEgg = "SELECT name,image,power FROM egg ORDER BY RAND() LIMIT 3;";
-$reponseEgg = $this->BDD->prepare($requestEgg);
+$reponseEgg = $BDD->prepare($requestEgg);
 $reponseEgg->execute();
 $dataEgg = $reponseEgg->fetch();
 
