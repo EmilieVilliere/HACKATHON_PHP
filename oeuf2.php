@@ -7,7 +7,7 @@ function display($var) {
 
 $host = "localhost";
 $user = "root";
-$pass = "";
+$pass = "lOMELANGEE0803";
 $dbname = "easter_eggs_hackaton";
 try {
     $BDD = new PDO('mysql:host='.$host.';dbname='.$dbname.';charset=utf8',$user,$pass);
@@ -24,39 +24,39 @@ if(isset($_GET['power'])) {
 }
 
 ?>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Document</title>
-</head>
-<body>
-<div class="card-deck">
-    <div class="card">
-        <img class="card-img-top" src="<?= $dataEgg[0]['image']; ?>" alt="<?php echo $dataEgg[0]['name']; ?>" >
-        <div class="card-body">
-            <h5 class="card-title"><?= $dataEgg[0]['name']; ?></h5>
-        </div>
-    </div>
-    <div class="card">
-        <img class="card-img-top" src="<?= $dataEgg[1]['image']; ?>" alt="<?php echo $dataEgg[1]['name']; ?>" >
-        <div class="card-body">
-            <h5 class="card-title"><?= $dataEgg[1]['name']; ?></h5>
-        </div>
-    </div>
-    <div class="card">
-        <img class="card-img-top" src=<?= $dataEgg[2]['image']; ?> alt=<?php echo $dataEgg[1]['name']; ?> >
-        <div class="card-body">
-            <h5 class="card-title"><?= $dataEgg[2]['name']; ?></h5>
-        </div>
-    </div>
-</div>
-<div>
-    <p>Tu as obtenu : <?= $power ?></p>
-</div>
-</body>
-</html>
+    <!DOCTYPE html>
+    <html lang="fr">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+                <title>Document</title>
+            </head>
+            <body>
+                <div class="card-deck">
+                    <div class="card">
+                        <img class="card-img-top" src="<?= $dataEgg[0]['image']; ?>" alt="<?php echo $dataEgg[0]['name']; ?>" >
+                        <div class="card-body">
+                            <h5 class="card-title"><?= $dataEgg[0]['name']; ?></h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="<?= $dataEgg[1]['image']; ?>" alt="<?php echo $dataEgg[1]['name']; ?>" >
+                        <div class="card-body">
+                            <h5 class="card-title"><?= $dataEgg[1]['name']; ?></h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src=<?= $dataEgg[2]['image']; ?> alt=<?php echo $dataEgg[1]['name']; ?> >
+                        <div class="card-body">
+                            <h5 class="card-title"><?= $dataEgg[2]['name']; ?></h5>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p>Tu as obtenu : <?= $power ?></p>
+                </div>
+            </body>
+        </html>
 

@@ -8,7 +8,7 @@ function display($var) {
 
 $host = "localhost";
 $user = "root";
-$pass = "";
+$pass = "lOMELANGEE0803";
 $dbname = "easter_eggs_hackaton";
 try {
     $BDD = new PDO('mysql:host='.$host.';dbname='.$dbname.';charset=utf8',$user,$pass);
@@ -21,42 +21,42 @@ $reponseEgg->execute();
 $dataEgg = $reponseEgg->fetchAll();
 
 ?>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Document</title>
-</head>
-<body>
-<div class="card-deck">
-    <a href=<?= "oeuf2.php?power=".$dataEgg[0]['power']; ?> >
-        <div class="card">
-            <img class="card-img-top" src="<?= $dataEgg[0]['image']; ?>" alt="<?php echo $dataEgg[0]['name']; ?>" >
-            <div class="card-body">
-                <h5 class="card-title"><?= $dataEgg[0]['name']; ?></h5>
-            </div>
-        </div>
-    </a>
-    <a href=<?= "oeuf2.php?power=".$dataEgg[1]['power']; ?> >
-        <div class="card">
-            <img class="card-img-top" src="<?= $dataEgg[1]['image']; ?>" alt="<?php echo $dataEgg[1]['name']; ?>" >
-            <div class="card-body">
-                <h5 class="card-title"><?= $dataEgg[1]['name']; ?></h5>
-            </div>
-        </div>
-    </a>
-    <a href=<?= "oeuf2.php?power=".$dataEgg[2]['power']; ?> >
-        <div class="card">
-            <img class="card-img-top" src=<?= $dataEgg[2]['image']; ?> alt=<?php echo $dataEgg[1]['name']; ?> >
-            <div class="card-body">
-                <h5 class="card-title"><?= $dataEgg[2]['name']; ?></h5>
-            </div>
-        </div>
-    </a>
-</div>
-</body>
-</html>
+    <!DOCTYPE html>
+        <html lang="fr">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+                <title>Document</title>
+            </head>
+            <body>
+                <div class="card-deck">
+                    <a href=<?= "oeuf2.php?power=".$dataEgg[0]['power']; ?> >
+                        <div class="card">
+                            <img class="card-img-top" src="<?= $dataEgg[0]['image']; ?>" alt="<?php echo $dataEgg[0]['name']; ?>" >
+                            <div class="card-body">
+                                <h5 class="card-title"><?= $dataEgg[0]['name']; ?></h5>
+                            </div>
+                        </div>
+                    </a>
+                    <a href=<?= "oeuf2.php?power=".$dataEgg[1]['power']; ?> >
+                        <div class="card">
+                            <img class="card-img-top" src="<?= $dataEgg[1]['image']; ?>" alt="<?php echo $dataEgg[1]['name']; ?>" >
+                            <div class="card-body">
+                                <h5 class="card-title"><?= $dataEgg[1]['name']; ?></h5>
+                            </div>
+                        </div>
+                    </a>
+                    <a href=<?= "oeuf2.php?power=".$dataEgg[2]['power']; ?> >
+                        <div class="card">
+                            <img class="card-img-top" src=<?= $dataEgg[2]['image']; ?> alt=<?php echo $dataEgg[1]['name']; ?> >
+                            <div class="card-body">
+                                <h5 class="card-title"><?= $dataEgg[2]['name']; ?></h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </body>
+        </html>
 
