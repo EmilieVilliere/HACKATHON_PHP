@@ -2,7 +2,7 @@
 session_start();
 
 if(isset($_GET['power'])) {
-    $power = $_GET['power'];
+    $power = urldecode($_GET['power']);
     $_SESSION['power3'] = $power;
 }
 ?>
