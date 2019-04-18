@@ -1,13 +1,11 @@
 <?php
 
+session_start();
+
 $connection = new PDO("mysql:dbname=easter_eggs_hackaton;host=localhost", "root", "lOMELANGEE0803");
 $requete ="SELECT name, image, skills FROM characters ORDER BY RAND() LIMIT 9;";
 $charactersInfo = $connection->query($requete);
 $resultat = $charactersInfo->fetchAll();
-echo "<pre>";
-var_dump($resultat);
-echo "</pre>";
-
 
 ?>
 
@@ -25,100 +23,108 @@ echo "</pre>";
 
     <!-- Les cards de nos oeufs apparaissent ici -->
             <div class="row m-auto d-inline-flex">
-                <div class="co l">
-                    <div class="card">
-                    <a href=<?= "oeuf.php?power=".$dataEgg[0]['power']; ?> >
-                        <img src=<?php echo $resultat[0]["image"]; ?>>
-                        <div class="card-body">
-                            <h4 class="card-title"><?php echo $resultat[0]["name"]; ?></h4>
-                            <p class="card-description"><?php echo $resultat[0]["skills"]; ?></p>
+                <div class="col">
+                    <a href=<?= "oeuf.php?name=".urlencode($resultat[0]['name'])."&skills=".urlencode($resultat[0]['skills']) ?> class="card">
+                        <div class="card">
+                            <img src=<?php echo $resultat[0]["image"]; ?>>
+                            <div class="card-body">
+                                <h4 class="card-title"><?php echo $resultat[0]["name"]; ?></h4>
+                                <p class="card-description"><?php echo $resultat[0]["skills"]; ?></p>
+                            </div>
                         </div>
                     </a>
-                    </div>
                 </div>
                 <div class="col">
-                    <div class="card">
-                    <a href=<?= "oeuf.php?power=".$dataEgg[0]['power']; ?> >
-                        <img src=<?php echo $resultat[1]["image"]; ?>>
-                        <div class="card-body">
-                            <h4 class="card-title"><?php echo $resultat[1]["name"]; ?></h4>
-                            <p class="card-description"><?php echo $resultat[1]["skills"]; ?></p>
+                    <a href=<?= "oeuf.php?name=".urlencode($resultat[1]['name'])."&skills=".urlencode($resultat[1]['skills']) ?> class="card">
+                        <div class="card">
+                            <img src=<?php echo $resultat[1]["image"]; ?>>
+                            <div class="card-body">
+                                <h4 class="card-title"><?php echo $resultat[1]["name"]; ?></h4>
+                                <p class="card-description"><?php echo $resultat[1]["skills"]; ?></p>
+                            </div>
                         </div>
-                    </div>
+                    </a> 
                 </div>
                 <div class="col">
-                    <div class="card">
-                    <a href=<?= "oeuf.php?power=".$dataEgg[0]['power']; ?> >
-                        <img src=<?php echo $resultat[2]["image"]; ?>>
-                        <div class="card-body">
-                            <h4 class="card-title"><?php echo $resultat[2]["name"]; ?></h4>
-                            <p class="card-description"><?php echo $resultat[2]["skills"]; ?></p>
+                    <a href=<?= "oeuf.php?name=".urlencode($resultat[2]['name'])."&skills=".urlencode($resultat[2]['skills']) ?> class="card">
+                        <div class="card">
+                            <img src=<?php echo $resultat[2]["image"]; ?>>
+                            <div class="card-body">
+                                <h4 class="card-title"><?php echo $resultat[2]["name"]; ?></h4>
+                                <p class="card-description"><?php echo $resultat[2]["skills"]; ?></p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row d-inline-flex">
-                <div class="col">
-                    <div class="card">
-                    <a href=<?= "oeuf.php?power=".$dataEgg[0]['power']; ?> >
-                        <img src=<?php echo $resultat[3]["image"]; ?>>
-                        <div class="card-body">
-                            <h4 class="card-title"><?php echo $resultat[3]["name"]; ?></h4>
-                            <p class="card-description"><?php echo $resultat[3]["skills"]; ?></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                    <a href=<?= "oeuf.php?power=".$dataEgg[0]['power']; ?> >
-                        <img src=<?php echo $resultat[4]["image"]; ?>>
-                        <div class="card-body">
-                            <h4 class="card-title"><?php echo $resultat[4]["name"]; ?></h4>
-                            <p class="card-description"><?php echo $resultat[4]["skills"]; ?></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                    <a href=<?= "oeuf.php?power=".$dataEgg[0]['power']; ?> >
-                        <img src=<?php echo $resultat[5]["image"]; ?>>
-                        <div class="card-body">
-                            <h4 class="card-title"><?php echo $resultat[5]["name"]; ?></h4>
-                            <p class="card-description"><?php echo $resultat[5]["skills"]; ?></p>
-                        </div>
-                    </div>
+                    </a> 
                 </div>
             </div>
             <div class="row d-inline-flex">
                 <div class="col">
-                    <div class="card">
-                    <a href=<?= "oeuf.php?power=".$dataEgg[0]['power']; ?> >
-                        <img src=<?php echo $resultat[6]["image"]; ?>>
-                        <div class="card-body">
-                            <h4 class="card-title"><?php echo $resultat[6]["name"]; ?></h4>
-                            <p class="card-description"><?php echo $resultat[6]["skills"]; ?></p>
+                    <a href=<?= "oeuf.php?name=".urlencode($resultat[3]['name'])."&skills=".urlencode($resultat[3]['skills']) ?> class="card">
+                        <div class="card">
+                            <img src=<?php echo $resultat[3]["image"]; ?>>
+                            <div class="card-body">
+                                <h4 class="card-title"><?php echo $resultat[3]["name"]; ?></h4>
+                                <p class="card-description"><?php echo $resultat[3]["skills"]; ?></p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col">
-                    <div class="card">
-                    <a href=<?= "oeuf.php?power=".$dataEgg[0]['power']; ?> >
-                        <img src=<?php echo $resultat[7]["image"]; ?>>
-                        <div class="card-body">
-                            <h4 class="card-title"><?php echo $resultat[7]["name"]; ?></h4>
-                            <p class="card-description"><?php echo $resultat[7]["skills"]; ?></p>
+                    <a href=<?= "oeuf.php?name=".urlencode($resultat[4]['name'])."&skills=".urlencode($resultat[4]['skills']) ?> class="card">
+                        <div class="card">
+                            <img src=<?php echo $resultat[4]["image"]; ?>>
+                            <div class="card-body">
+                                <h4 class="card-title"><?php echo $resultat[4]["name"]; ?></h4>
+                                <p class="card-description"><?php echo $resultat[4]["skills"]; ?></p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col">
-                    <div class="card">
-                    <a href=<?= "oeuf.php?power=".$dataEgg[0]['power']; ?> >
-                        <img src=<?php echo $resultat[8]["image"]; ?>>
-                        <div class="card-body">
-                            <h4 class="card-title"><?php echo $resultat[8]["name"]; ?></h4>
-                            <p class="card-description"><?php echo $resultat[8]["skills"]; ?></p>
+                    <a href=<?= "oeuf.php?name=".urlencode($resultat[5]['name'])."&skills=".urlencode($resultat[5]['skills']) ?> class="card">
+                        <div class="card">
+                            <img src=<?php echo $resultat[5]["image"]; ?>>
+                            <div class="card-body">
+                                <h4 class="card-title"><?php echo $resultat[5]["name"]; ?></h4>
+                                <p class="card-description"><?php echo $resultat[5]["skills"]; ?></p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row d-inline-flex">
+                <div class="col">
+                    <a href=<?= "oeuf.php?name=".urlencode($resultat[6]['name'])."&skills=".urlencode($resultat[6]['skills']) ?> class="card">
+                        <div class="card">
+                            <img src=<?php echo $resultat[6]["image"]; ?>>
+                            <div class="card-body">
+                                <h4 class="card-title"><?php echo $resultat[6]["name"]; ?></h4>
+                                <p class="card-description"><?php echo $resultat[6]["skills"]; ?></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href=<?= "oeuf.php?name=".urlencode($resultat[7]['name'])."&skills=".urlencode($resultat[7]['skills']) ?> class="card">
+                        <div class="card">
+                            <img src=<?php echo $resultat[7]["image"]; ?>>
+                            <div class="card-body">
+                                <h4 class="card-title"><?php echo $resultat[7]["name"]; ?></h4>
+                                <p class="card-description"><?php echo $resultat[7]["skills"]; ?></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href=<?= "oeuf.php?name=".urlencode($resultat[8]['name'])."&skills=".urlencode($resultat[8]['skills']) ?> class="card">
+                        <div class="card">
+                            <img src=<?php echo $resultat[8]["image"]; ?>>
+                            <div class="card-body">
+                                <h4 class="card-title"><?php echo $resultat[8]["name"]; ?></h4>
+                                <p class="card-description"><?php echo $resultat[8]["skills"]; ?></p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
