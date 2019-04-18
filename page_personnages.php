@@ -7,7 +7,7 @@ $requete ="SELECT name, image, skills FROM characters ORDER BY RAND() LIMIT 9;";
 $charactersInfo = $connection->query($requete);
 $resultat = $charactersInfo->fetchAll();
 
-if ($_GET)
+/*if ($_GET)
 {
     if ($_GET['perso']==1)
     {
@@ -55,7 +55,7 @@ if ($_GET)
         $_SESSION['skills']=$resultat[8]["skills"];
     }
     header('Location: resultat.php');
-}
+}*/
 
 
 
@@ -81,7 +81,7 @@ var_dump ($_GET);
         <!-- Les cards de nos oeufs apparaissent ici -->
                 <div class="row">
                     <div class="col">
-                        <a href="page_personnages.php?perso=1"  class="card">
+                        <a href=<?= "resultat.php?name=".urlencode($resultat[0]['name'])."&skills=".urlencode($resultat[0]['skills']) ?>  class="card">
                             <img src=<?php echo $resultat[0]["image"]; ?>>
                             <div class="card-body">
                             <h4 class="card-title"><?php echo $resultat[0]["name"]; ?></h4>
@@ -90,7 +90,7 @@ var_dump ($_GET);
                         </a>
                     </div>
                     <div class="col">
-                        <a href="page_personnages.php?perso=2" class="card">
+                        <a href=<?= "resultat.php?name=".urlencode($resultat[1]['name'])."&skills=".urlencode($resultat[1]['skills']) ?> class="card">
                             <img src=<?php echo $resultat[1]["image"]; ?>>
                             <div class="card-body">
                             <h4 class="card-title"><?php echo $resultat[1]["name"]; ?></h4>
@@ -99,7 +99,7 @@ var_dump ($_GET);
                         </a>
                     </div>
                     <div class="col">
-                        <a href="page_personnages.php?perso=3" class="card">
+                        <a href=<?= "resultat.php?name=".urlencode($resultat[2]['name'])."&skills=".urlencode($resultat[2]['skills']) ?> class="card">
                             <img src=<?php echo $resultat[2]["image"]; ?>>
                             <div class="card-body">
                             <h4 class="card-title"><?php echo $resultat[2]["name"]; ?></h4>
@@ -110,7 +110,7 @@ var_dump ($_GET);
                 </div>
                 <div class="row">
                     <div class="col">
-                        <a href="page_personnages.php?perso=4" class="card">
+                        <a href=<?= "resultat.php?name=".urlencode($resultat[3]['name'])."&skills=".urlencode($resultat[3]['skills']) ?> class="card">
                             <img src=<?php echo $resultat[3]["image"]; ?>>
                             <div class="card-body">
                             <h4 class="card-title"><?php echo $resultat[3]["name"]; ?></h4>
@@ -119,7 +119,7 @@ var_dump ($_GET);
                         </a>
                     </div>
                     <div class="col">
-                        <a href="page_personnages.php?perso=5" class="card">
+                        <a href=<?= "resultat.php?name=".urlencode($resultat[4]['name'])."&skills=".urlencode($resultat[4]['skills']) ?> class="card">
                             <img src=<?php echo $resultat[4]["image"]; ?>>
                             <div class="card-body">
                             <h4 class="card-title"><?php echo $resultat[4]["name"]; ?></h4>
@@ -128,7 +128,7 @@ var_dump ($_GET);
                         </a>
                     </div>
                     <div class="col">
-                        <a href="page_personnages.php?perso=6" class="card">
+                        <a href=<?= "resultat.php?name=".urlencode($resultat[5]['name'])."&skills=".urlencode($resultat[5]['skills']) ?> class="card">
                             <img src=<?php echo $resultat[5]["image"]; ?>>
                             <div class="card-body">
                             <h4 class="card-title"><?php echo $resultat[5]["name"]; ?></h4>
@@ -139,7 +139,7 @@ var_dump ($_GET);
                 </div>
                 <div class="row">
                     <div class="col">
-                        <a href="page_personnages.php?perso=7" class="card">
+                        <a href=<?= "resultat.php?name=".urlencode($resultat[6]['name'])."&skills=".urlencode($resultat[6]['skills']) ?> class="card">
                             <img src=<?php echo $resultat[6]["image"]; ?>>
                             <div class="card-body">
                             <h4 class="card-title"><?php echo $resultat[6]["name"]; ?></h4>
@@ -148,7 +148,7 @@ var_dump ($_GET);
                         </a>
                     </div>
                     <div class="col">
-                        <a href="page_personnages.php?perso=8" class="card">
+                        <a href=<?= "resultat.php?name=".urlencode($resultat[7]['name'])."&skills=".urlencode($resultat[7]['skills']) ?> class="card">
                             <img src=<?php echo $resultat[7]["image"]; ?>>
                             <div class="card-body">
                             <h4 class="card-title"><?php echo $resultat[7]["name"]; ?></h4>
@@ -157,7 +157,7 @@ var_dump ($_GET);
                         </a>
                     </div>
                     <div class="col">
-                        <a href="page_personnages.php?perso=9" class="card">
+                        <a href=<?= "resultat.php?name=".urlencode($resultat[8]['name'])."&skills=".urlencode($resultat[8]['skills']) ?> class="card">
                             <img src=<?php echo $resultat[8]["image"]; ?>>
                             <div class="card-body">
                             <h4 class="card-title"><?php echo $resultat[8]["name"]; ?></h4>

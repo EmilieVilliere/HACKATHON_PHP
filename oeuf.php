@@ -47,7 +47,7 @@ $dataEgg = $reponseEgg->fetchAll();
                             </div>
                         </a>
                         <a class="card" href=<?= "oeuf2.php?power=".urlencode($dataEgg[2]['power']); ?> >
-                            <img class="card-img-top" src=<?= $dataEgg[2]['image']; ?> alt=<?php echo $dataEgg[1]['name']; ?> >
+                            <img class="card-img-top" src=<?= $dataEgg[2]['image']; ?> alt=<?php echo $dataEgg[2]['name']; ?> >
                             <div class="card-body">
                                 <h5 class="card-title"><?= $dataEgg[2]['name']; ?></h5>
                             </div>
