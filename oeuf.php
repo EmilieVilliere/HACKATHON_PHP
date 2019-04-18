@@ -32,7 +32,7 @@ $dataEgg = $reponseEgg->fetchAll();
 </head>
 <body>
 <div class="card-deck">
-    <a href="oeuf2.php?power="<?php echo $dataEgg[0]['power']; ?> >
+    <a href=<?= "oeuf2.php?power=".$dataEgg[0]['power']; ?> >
         <div class="card">
             <img class="card-img-top" src="<?= $dataEgg[0]['image']; ?>" alt="<?php echo $dataEgg[0]['name']; ?>" >
             <div class="card-body">
@@ -40,7 +40,7 @@ $dataEgg = $reponseEgg->fetchAll();
             </div>
         </div>
     </a>
-    <a href="oeuf2.php?power="<?php echo $dataEgg[1]['power']; ?> >
+    <a href=<?= "oeuf2.php?power=".$dataEgg[1]['power']; ?> >
         <div class="card">
             <img class="card-img-top" src="<?= $dataEgg[1]['image']; ?>" alt="<?php echo $dataEgg[1]['name']; ?>" >
             <div class="card-body">
@@ -48,7 +48,7 @@ $dataEgg = $reponseEgg->fetchAll();
             </div>
         </div>
     </a>
-    <a href="oeuf2.php?power="<?php echo $dataEgg[2]['power']; ?> >
+    <a href=<?= "oeuf2.php?power=".$dataEgg[2]['power']; ?> >
         <div class="card">
             <img class="card-img-top" src=<?= $dataEgg[2]['image']; ?> alt=<?php echo $dataEgg[1]['name']; ?> >
             <div class="card-body">
