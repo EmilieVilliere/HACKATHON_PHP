@@ -20,8 +20,6 @@ $reponseEgg = $BDD->prepare($requestEgg);
 $reponseEgg->execute();
 $dataEgg = $reponseEgg->fetchAll();
 
-display($dataEgg);
-
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -34,24 +32,30 @@ display($dataEgg);
 </head>
 <body>
 <div class="card-deck">
-    <div class="card">
-        <img class="card-img-top" src="<?= $dataEgg[0]['image']; ?>" alt="<?php echo $dataEgg[0]['name']; ?>" >
-        <div class="card-body">
-            <h5 class="card-title"><?= $dataEgg[0]['name']; ?></h5>
+    <a href="oeuf2.php?power="<?php echo $dataEgg[0]['power']; ?> >
+        <div class="card">
+            <img class="card-img-top" src="<?= $dataEgg[0]['image']; ?>" alt="<?php echo $dataEgg[0]['name']; ?>" >
+            <div class="card-body">
+                <h5 class="card-title"><?= $dataEgg[0]['name']; ?></h5>
+            </div>
         </div>
-    </div>
-    <div class="card">
-        <img class="card-img-top" src="<?= $dataEgg[1]['image']; ?>" alt="<?php echo $dataEgg[1]['name']; ?>" >
-        <div class="card-body">
-            <h5 class="card-title"><?= $dataEgg[1]['name']; ?></h5>
+    </a>
+    <a href="oeuf2.php?power="<?php echo $dataEgg[1]['power']; ?> >
+        <div class="card">
+            <img class="card-img-top" src="<?= $dataEgg[1]['image']; ?>" alt="<?php echo $dataEgg[1]['name']; ?>" >
+            <div class="card-body">
+                <h5 class="card-title"><?= $dataEgg[1]['name']; ?></h5>
+            </div>
         </div>
-    </div>
-    <div class="card">
-        <img class="card-img-top" src=<?= $dataEgg[2]['image']; ?> alt=<?php echo $dataEgg[1]['name']; ?> >
-        <div class="card-body">
-            <h5 class="card-title"><?= $dataEgg[2]['name']; ?></h5>
+    </a>
+    <a href="oeuf2.php?power="<?php echo $dataEgg[2]['power']; ?> >
+        <div class="card">
+            <img class="card-img-top" src=<?= $dataEgg[2]['image']; ?> alt=<?php echo $dataEgg[1]['name']; ?> >
+            <div class="card-body">
+                <h5 class="card-title"><?= $dataEgg[2]['name']; ?></h5>
+            </div>
         </div>
-    </div>
+    </a>
 </div>
 </body>
 </html>
