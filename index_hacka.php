@@ -12,8 +12,7 @@
 <div class="card-deck">
     <a href="#" class="card">
         <div class="card-body">
-        <img src="oeuf.png" alt="oeufmaggle">
-        <acronym title="Voici l'oeuf !"></acronym>
+        <span title="Description oeuf maméne !"><img src="oeuf.png" alt="oeufmaggle"></span>
         </div>
     </a>
     <a href="#" class="card">
