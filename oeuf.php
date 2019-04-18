@@ -15,9 +15,8 @@ try {
 } catch (PDOException $e) {
     die('Connexion à la BDD échouée : ' . $e->getMessage());
 }
-$requestEgg = "SELECT name,image,power FROM egg LIMIT 3;";
-$reponseEgg = $BDD->prepare($requestEgg);
-$reponseEgg->execute();
+$requestEgg = "SELECT name,image,power FROM ORDER BY RAND() egg LIMIT 3;";
+$reponseEgg = $BDD->query($requestEgg);;
 $dataEgg = $reponseEgg->fetch();
 
 var_dump($dataEgg);
