@@ -3,7 +3,7 @@ session_start();
 
 if(isset($_GET['power'])) {
     $power = $_GET['power'];
-    $_SESSION['3'] = $power;
+    $_SESSION['power3'] = $power;
 }
 ?>
 

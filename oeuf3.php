@@ -23,7 +23,7 @@ $dataEgg = $reponseEgg->fetchAll();
 
 if(isset($_GET['power'])) {
     $power = $_GET['power'];
-    $_SESSION['2'] = $power;
+    $_SESSION['power2'] = $power;
 }
 
 ?>
