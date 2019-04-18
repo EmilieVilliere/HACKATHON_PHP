@@ -1,0 +1,18 @@
+.oeuf{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contenu{
+    display : block;
+    width : calc(100% /35);
+}
+.contenu img{
+    display : block;
+    width : 100%;
+    margin : 0 auto;
+}
+#B {
+    display: table-cell;
+    vertical-align: middle;
+}
