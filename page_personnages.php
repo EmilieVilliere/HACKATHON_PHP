@@ -1,12 +1,68 @@
 <?php
 
+session_start();
+
 $connection = new PDO("mysql:dbname=easter_eggs_hackaton;host=localhost", "root", "123");
 $requete ="SELECT name, image, skills FROM characters ORDER BY RAND() LIMIT 9;";
 $charactersInfo = $connection->query($requete);
 $resultat = $charactersInfo->fetchAll();
-echo "<pre>";
-var_dump($resultat);
-echo "</pre>";
+
+if ($_GET)
+{
+    if ($_GET['perso']==1)
+    {
+        $_SESSION['name']=$resultat[0]["name"];
+        $_SESSION['skills']=$resultat[0]["skills"];
+    }
+    if ($_GET['perso']==2)
+    {
+        $_SESSION['name']=$resultat[1]["name"];
+        $_SESSION['skills']=$resultat[1]["skills"];
+    }
+    if ($_GET['perso']==3)
+    {
+        $_SESSION['name']=$resultat[2]["name"];
+        $_SESSION['skills']=$resultat[2]["skills"];
+    }
+    if ($_GET['perso']==4)
+    {
+        $_SESSION['name']=$resultat[3]["name"];
+        $_SESSION['skills']=$resultat[3]["skills"];
+    }
+    if ($_GET['perso']==5)
+    {
+        $_SESSION['name']=$resultat[4]["name"];
+        $_SESSION['skills']=$resultat[4]["skills"];
+    }
+    if ($_GET['perso']==6)
+    {
+        $_SESSION['name']=$resultat[5]["name"];
+        $_SESSION['skills']=$resultat[5]["skills"];
+    }
+    if ($_GET['perso']==7)
+    {
+        $_SESSION['name']=$resultat[6]["name"];
+        $_SESSION['skills']=$resultat[6]["skills"];
+    }
+    if ($_GET['perso']==8)
+    {
+        $_SESSION['name']=$resultat[7]["name"];
+        $_SESSION['skills']=$resultat[7]["skills"];
+    }
+    if ($_GET['perso']==9)
+    {
+        $_SESSION['name']=$resultat[8]["name"];
+        $_SESSION['skills']=$resultat[8]["skills"];
+    }
+    header('Location: resultat.php');
+}
+
+
+
+
+
+var_dump ($_GET);
+
 
 
 ?>
@@ -25,89 +81,89 @@ echo "</pre>";
         <!-- Les cards de nos oeufs apparaissent ici -->
                 <div class="row">
                     <div class="col">
-                        <div class="card">
+                        <a href="page_personnages.php?perso=1"  class="card">
                             <img src=<?php echo $resultat[0]["image"]; ?>>
                             <div class="card-body">
                             <h4 class="card-title"><?php echo $resultat[0]["name"]; ?></h4>
                             <!-- Card content -->
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col">
-                        <div class="card">
+                        <a href="page_personnages.php?perso=2" class="card">
                             <img src=<?php echo $resultat[1]["image"]; ?>>
                             <div class="card-body">
                             <h4 class="card-title"><?php echo $resultat[1]["name"]; ?></h4>
                             <!-- Card content -->
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col">
-                        <div class="card">
+                        <a href="page_personnages.php?perso=3" class="card">
                             <img src=<?php echo $resultat[2]["image"]; ?>>
                             <div class="card-body">
                             <h4 class="card-title"><?php echo $resultat[2]["name"]; ?></h4>
                             <!-- Card content -->
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
-                        <div class="card">
+                        <a href="page_personnages.php?perso=4" class="card">
                             <img src=<?php echo $resultat[3]["image"]; ?>>
                             <div class="card-body">
                             <h4 class="card-title"><?php echo $resultat[3]["name"]; ?></h4>
                             <!-- Card content -->
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col">
-                        <div class="card">
+                        <a href="page_personnages.php?perso=5" class="card">
                             <img src=<?php echo $resultat[4]["image"]; ?>>
                             <div class="card-body">
                             <h4 class="card-title"><?php echo $resultat[4]["name"]; ?></h4>
                             <!-- Card content -->
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col">
-                        <div class="card">
+                        <a href="page_personnages.php?perso=6" class="card">
                             <img src=<?php echo $resultat[5]["image"]; ?>>
                             <div class="card-body">
                             <h4 class="card-title"><?php echo $resultat[5]["name"]; ?></h4>
                             <!-- Card content -->
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
-                        <div class="card">
+                        <a href="page_personnages.php?perso=7" class="card">
                             <img src=<?php echo $resultat[6]["image"]; ?>>
                             <div class="card-body">
                             <h4 class="card-title"><?php echo $resultat[6]["name"]; ?></h4>
                             <!-- Card content -->
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col">
-                        <div class="card">
+                        <a href="page_personnages.php?perso=8" class="card">
                             <img src=<?php echo $resultat[7]["image"]; ?>>
                             <div class="card-body">
                             <h4 class="card-title"><?php echo $resultat[7]["name"]; ?></h4>
                             <!-- Card content -->
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col">
-                        <div class="card">
+                        <a href="page_personnages.php?perso=9" class="card">
                             <img src=<?php echo $resultat[8]["image"]; ?>>
                             <div class="card-body">
                             <h4 class="card-title"><?php echo $resultat[8]["name"]; ?></h4>
                             <!-- Card content -->
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
