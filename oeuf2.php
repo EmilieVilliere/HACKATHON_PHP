@@ -22,7 +22,7 @@ $reponseEgg->execute();
 $dataEgg = $reponseEgg->fetchAll();
 
 if(isset($_GET['power'])) {
-    $power = $_GET['power'];
+    $power = urldecode($_GET['power']);
     $_SESSION['power1'] = $power;
 }
 

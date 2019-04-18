@@ -34,23 +34,22 @@ $dataEgg = $reponseEgg->fetchAll();
             <body>
                 <div class="container">
                         <div class="card-deck">
-                        <a class="card" href=<?= "oeuf2.php?power=".$dataEgg[0]['power']; ?> >
+                        <a class="card" href=<?= "oeuf2.php?power=".urlencode($dataEgg[0]['power']); ?> >
                             <img class="card-img-top" src="<?= $dataEgg[0]['image']; ?>" alt="<?php echo $dataEgg[0]['name']; ?>" >
                             <div class="card-body">
                                 <h5 class="card-title"><?= $dataEgg[0]['name']; ?></h5>
                             </div>
                         </a>
-                        <a class="card" href=<?= "oeuf2.php?power=".$dataEgg[1]['power']; ?> >
+                        <a class="card" href=<?= "oeuf2.php?power=".urlencode($dataEgg[1]['power']); ?> >
                             <img class="card-img-top" src="<?= $dataEgg[1]['image']; ?>" alt="<?php echo $dataEgg[1]['name']; ?>" >
                             <div class="card-body">
                                 <h5 class="card-title"><?= $dataEgg[1]['name']; ?></h5>
                             </div>
                         </a>
-                        <a class="card" href=<?= "oeuf2.php?power=".$dataEgg[2]['power']; ?> >
+                        <a class="card" href=<?= "oeuf2.php?power=".urlencode($dataEgg[2]['power']); ?> >
                             <img class="card-img-top" src=<?= $dataEgg[2]['image']; ?> alt=<?php echo $dataEgg[1]['name']; ?> >
                             <div class="card-body">
                                 <h5 class="card-title"><?= $dataEgg[2]['name']; ?></h5>
-                                <p><?= $dataEgg[2]['power']; ?></p>
                             </div>
                         </a>
                     </div>
