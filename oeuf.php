@@ -35,7 +35,7 @@ display($dataEgg);
 <body>
 <div class="card-deck">
     <div class="card">
-        <img class="card-img-top" src=<?php echo $dataEgg[0]['image']; ?> alt=<?php echo $dataEgg[0]['name']; ?>>
+        <img  src=<?php echo $dataEgg[0]['image']; ?> alt=<?php echo $dataEgg[0]['name']; ?>>
         <div class="card-body">
             <h5 class="card-title">Card title</h5>
         </div>
