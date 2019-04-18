@@ -50,6 +50,7 @@ $dataEgg = $reponseEgg->fetchAll();
                             <img class="card-img-top" src=<?= $dataEgg[2]['image']; ?> alt=<?php echo $dataEgg[1]['name']; ?> >
                             <div class="card-body">
                                 <h5 class="card-title"><?= $dataEgg[2]['name']; ?></h5>
+                                <p><?= $dataEgg[2]['power']; ?></p>
                             </div>
                         </a>
                     </div>
