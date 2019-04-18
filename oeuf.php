@@ -2,7 +2,7 @@
 
 function display($var) {
     echo '<pre>';
-    echo var_dump($var);
+    var_dump($var);
     echo '</pre>';
 }
 
@@ -35,21 +35,21 @@ display($dataEgg);
 <body>
 <div class="card-deck">
     <div class="card">
-        <img class="card-img-top" src="<?php echo $dataEgg[0]['image']; ?>" alt="<?php echo $dataEgg[0]['name']; ?>" >
+        <img class="card-img-top" src="<?= $dataEgg[0]['image']; ?>" alt="<?php echo $dataEgg[0]['name']; ?>" >
         <div class="card-body">
-            <h5 class="card-title"><?php echo $dataEgg[0]['name']; ?></h5>
+            <h5 class="card-title"><?= $dataEgg[0]['name']; ?></h5>
         </div>
     </div>
     <div class="card">
-        <img class="card-img-top" src="<?php echo $dataEgg[1]['image']; ?>" alt="<?php echo $dataEgg[1]['name']; ?>" >
+        <img class="card-img-top" src="<?= $dataEgg[1]['image']; ?>" alt="<?php echo $dataEgg[1]['name']; ?>" >
         <div class="card-body">
-            <h5 class="card-title"><?php echo $dataEgg[1]['name']; ?></h5>
+            <h5 class="card-title"><?= $dataEgg[1]['name']; ?></h5>
         </div>
     </div>
     <div class="card">
-        <img class="card-img-top" src="<?php echo $dataEgg[2]['image']; ?>" alt="<?php echo $dataEgg[1]['name']; ?>" >
+        <img class="card-img-top" src=<?= $dataEgg[2]['image']; ?> alt=<?php echo $dataEgg[1]['name']; ?> >
         <div class="card-body">
-            <h5 class="card-title"><?php echo $dataEgg[2]['name']; ?></h5>
+            <h5 class="card-title"><?= $dataEgg[2]['name']; ?></h5>
         </div>
     </div>
 </div>
