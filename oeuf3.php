@@ -59,8 +59,10 @@ if(isset($_GET['power'])) {
         </a>
     </div>
 </div>
-<div class="paragraph">
-    <p> Super ! Tu as obtenu ce pouvoir :<?= $_SESSION['power1'] ?> tu peux continuer l'utiliser à ta guise, peut être qu'avec </p>
+<div class="text-center">
+    <p> Super ! </p> 
+    <p>Tu as obtenu ce pouvoir :<?= $_SESSION['power1'] ?> </p>
+    <p>tu peux continuer l'utiliser à ta guise, peut être qu'avec </p>
     <p>celui ci en plus : <?= $power ?> tu pourrais faire des miracles !</p>
 </div>
 </body>
