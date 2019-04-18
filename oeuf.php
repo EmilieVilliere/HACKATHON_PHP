@@ -1,4 +1,11 @@
 <?php
+
+function display($var) {
+    echo '<pre>';
+    echo var_dump($var);
+    echo '</pre>';
+}
+
 $host = "localhost";
 $user = "root";
 $pass = "";
@@ -13,7 +20,7 @@ $reponseEgg = $BDD->prepare($requestEgg);
 $reponseEgg->execute();
 $dataEgg = $reponseEgg->fetch();
 
-var_dump($dataEgg);
+display($dataEgg);
 
 ?>
 <!DOCTYPE html>
