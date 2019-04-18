@@ -1,3 +1,20 @@
+<?php
+$host = "localhost";
+$user = "root";
+$pass = "";
+$dbname = "easter_eggs_hackaton";
+try {
+    $BDD = new PDO('mysql:host='.$host.';dbname='.$dbname.';charset=utf8',$user,$pass);
+} catch (PDOException $e) {
+    die('Connexion à la BDD échouée : ' . $e->getMessage());
+}
+$requestEgg = "SELECT name,image,power FROM egg ORDER BY RAND() LIMIT 3;";
+$reponseEgg = $this->BDD->prepare($requestEgg);
+$reponseEgg->execute();
+$dataEgg = $reponseEgg->fetch();
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,24 +26,21 @@
 <body>
 <div class="card-deck">
     <div class="card">
-        <img src="..." class="card-img-top" alt="...">
+        <img src=<?php echo $dataEgg[0]['image']; ?> class="card-img-top" alt=<?php echo $dataEgg[0]['name']; ?>>
         <div class="card-body">
             <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
         </div>
     </div>
     <div class="card">
-        <img src="..." class="card-img-top" alt="...">
+        <img src=<?php echo $dataEgg[1]['image']; ?> class="card-img-top" alt=<?php echo $dataEgg[1]['name']; ?>>
         <div class="card-body">
             <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
         </div>
     </div>
     <div class="card">
-        <img src="..." class="card-img-top" alt="...">
+        <img src=<?php echo $dataEgg[2]['image']; ?> class="card-img-top" alt=<?php echo $dataEgg[1]['name']; ?>>
         <div class="card-body">
             <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
         </div>
     </div>
 </div>
