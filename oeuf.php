@@ -20,7 +20,7 @@ $reponseEgg = $BDD->prepare($requestEgg);
 $reponseEgg->execute();
 $dataEgg = $reponseEgg->fetch();
 
-display($dataEgg);
+var_dump($dataEgg);
 
 ?>
 <!DOCTYPE html>
