@@ -17,7 +17,7 @@ try {
 }
 $requestEgg = "SELECT name,image,power FROM ORDER BY RAND() egg LIMIT 3;";
 $reponseEgg = $BDD->query($requestEgg);;
-$dataEgg = $reponseEgg->fetch();
+$dataEgg = $reponseEgg->fetchAll();
 
 var_dump($dataEgg);
 
