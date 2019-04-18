@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 function display($var) {
     echo '<pre>';
     var_dump($var);
@@ -21,6 +23,7 @@ $dataEgg = $reponseEgg->fetchAll();
 
 if(isset($_GET['power'])) {
     $power = $_GET['power'];
+    $_SESSION['power1'] = $power;
 }
 
 ?>
@@ -34,29 +37,31 @@ if(isset($_GET['power'])) {
                 <title>Document</title>
             </head>
             <body>
+            <div class="container">
                 <div class="card-deck">
-                    <div class="card">
+                    <a class="card" href=<?= "oeuf3.php?power=".$dataEgg[0]['power']; ?> >
                         <img class="card-img-top" src="<?= $dataEgg[0]['image']; ?>" alt="<?php echo $dataEgg[0]['name']; ?>" >
                         <div class="card-body">
                             <h5 class="card-title"><?= $dataEgg[0]['name']; ?></h5>
                         </div>
-                    </div>
-                    <div class="card">
+                    </a>
+                    <a class="card" href=<?= "oeuf3.php?power=".$dataEgg[1]['power']; ?> >
                         <img class="card-img-top" src="<?= $dataEgg[1]['image']; ?>" alt="<?php echo $dataEgg[1]['name']; ?>" >
                         <div class="card-body">
                             <h5 class="card-title"><?= $dataEgg[1]['name']; ?></h5>
                         </div>
-                    </div>
-                    <div class="card">
+                    </a>
+                    <a class="card" href=<?= "oeuf3.php?power=".$dataEgg[2]['power']; ?> >
                         <img class="card-img-top" src=<?= $dataEgg[2]['image']; ?> alt=<?php echo $dataEgg[1]['name']; ?> >
                         <div class="card-body">
                             <h5 class="card-title"><?= $dataEgg[2]['name']; ?></h5>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                <div>
-                    <p>Tu as obtenu : <?= $power ?></p>
-                </div>
-            </body>
-        </html>
+            </div>
+            <div>
+                <p>Tu as obtenu : <?= $power ?></p>
+            </div>
+        </body>
+    </html>
 

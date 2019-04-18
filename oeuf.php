@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 function display($var) {
     echo '<pre>';
