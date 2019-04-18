@@ -15,59 +15,104 @@ if ($_POST){
 <head>
   <meta charset="utf-8">
   <title>footer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
     <body>
         <footer>
-           
-            <table>
-                <tr>
-                <div class="content-box">
-                    <td><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'></td>
-                    <td><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'></td>
-                    <td><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'></td>
-                    <td><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'></td>
-                    <td><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'></td>
-                    <td><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'></td>
-                    <td><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'></td>
-                <div class="content-box">
-                </tr>
-                <tr>
-                    <td><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'></td>
-                    <td><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'></td>
-                    <td>B</td>
-                    <td><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'></td>
-                    <td>A</td>
-                    <td><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'></td>
-                    <td><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'></td>
-                </tr>
-                <tr>
-                <td><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'></td>
-                <td><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'></td>
-                <td>D</td>
-                <td><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'></td>
-                <td><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'></td>
-                <td>A</td>
-                <td><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'></td>
-                </tr>
-                <tr>
-                    <td><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'></td>
-                    <td><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'></td>
-                    <td>S</td>
-                    <td><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'></td>
-                    <td><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'></td>
-                    <td>S</td>
-                    <td><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'></td>
-                </tr>
-                <tr>
-                    <td><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf' ></td>
-                    <td><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf' ></td>
-                    <td><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf' ></td>
-                    <td><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf' ></td>
-                    <td><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf' ></td>
-                    <td><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf' ></td>
-                    <td><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf' ></td>
-                </tr>
-            </table>
+                <div class="oeuf">
+                    <span class= "contenu">
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                    </span>
+                    <span class= "contenu">    
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                    </span>
+                    <span class= "contenu">
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                    </span>
+                    <span class= "contenu">
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                    </span>
+                    <span class= "contenu">
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                    </span>
+                    <span class= "contenu">
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                    </span>
+                    <span class= "contenu">
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                    </span>
+                    <span class= "contenu">
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                    </span>
+                    <span class= "contenu">           
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                    </span>
+                    <span>B</span>
+                    <span class= "contenu">
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                    </span>
+                    <span>A</span>
+                    <span class= "contenu">
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                    </span>
+                    <span class= "contenu">
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                    </span>
+                    <span class= "contenu">
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                    </span>
+                    <span class= "contenu">
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                    </span>
+                    <span>D</span>
+                    <span class= "contenu">                   
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                    </span>
+                    <span class= "contenu">
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                    </span class= "contenu">
+                    <span>A</span>
+                    <span class= "contenu">
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                    </span>
+                    <span class= "contenu">
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                    </span>
+                    <span class= "contenu">
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                    </span>
+                    <span class= "contenu">S</span>
+                    <span class= "contenu">
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                    </span>
+                    <span class= "contenu">
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                    </span>
+                    <span>S</span>
+                    <span class= "contenu">
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                    </span>
+                    <span class= "contenu">
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                    </span>
+                    <span class= "contenu">
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                    </span>
+                    <span class= "contenu">
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                    </span>
+                    <span class= "contenu">
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                    </span>
+                    <span class= "contenu">
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                    </span>
+                    <span class= "contenu">
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                    </span>
+                    <span class= "contenu">
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                    </span>
             </div>
             <div style = "text-align: center;">
                 <form action="footer.php" method="post" >
