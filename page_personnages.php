@@ -23,55 +23,64 @@ echo "</pre>";
 
         <!-- Les cards de nos oeufs apparaissent ici -->
             <div class="card-columns">
-            <div class="card">
-                <div class="card-body">
+
+
+
+                <div class="card">
                 <img src=<?php echo $resultat[0]["image"]; ?>>
-                <h4 class="card-title"><?php echo $resultat[0]["name"]; ?></h4>
-                <p class="card-description"><?php echo $resultat[0]["skills"]; ?></p>
-                <!-- Card content -->
+                    <div class="card-body">
+                        <h4 class="card-title"><?php echo $resultat[0]["name"]; ?></h4>
+                        <p class="card-description"><?php echo $resultat[0]["skills"]; ?></p>
+                    </div>
                 </div>
-            </div>
-            <div class="card p-3">
-            <img src=<?php echo $resultat[1]["image"]; ?>>
-                <h4 class="card-title"><?php echo $resultat[1]["name"]; ?></h4>
-                <!-- Card content -->
-            </div>
-            <div class="card">
-                <div class="card-body">
+
+                <div class="card">
+                <img src=<?php echo $resultat[1]["image"]; ?>>
+                    <div class="card-body">
+                        <h4 class="card-title"><?php echo $resultat[1]["name"]; ?></h4>
+                        <p class="card-description"><?php echo $resultat[1]["skills"]; ?></p>
+                    </div>
+                </div>
+
+                <div class="card">
                 <img src=<?php echo $resultat[2]["image"]; ?>>
-                <h4 class="card-title"><?php echo $resultat[2]["name"]; ?></h4>
-                <!-- Card content -->
+                    <div class="card-body">
+                        <h4 class="card-title"><?php echo $resultat[2]["name"]; ?></h4>
+                        <p class="card-description"><?php echo $resultat[2]["skills"]; ?></p>
+                    </div>
                 </div>
-            </div>
-            <div class="card p-3">
-            <img src=<?php echo $resultat[3]["image"]; ?>>
-                <h4 class="card-title"><?php echo $resultat[3]["name"]; ?></h4>
-                <!-- Card content -->
-            </div>
-            <div class="card">
-                <div class="card-body">
+
+                <div class="card">
+                <img src=<?php echo $resultat[3]["image"]; ?>>
+                    <div class="card-body">
+                        <h4 class="card-title"><?php echo $resultat[3]["name"]; ?></h4>
+                        <p class="card-description"><?php echo $resultat[3]["skills"]; ?></p>
+                    </div>
+                </div>
+
+                <div class="card">
                 <img src=<?php echo $resultat[4]["image"]; ?>>
-                <h4 class="card-title"><?php echo $resultat[4]["name"]; ?></h4>
-                <!-- Card content -->
+                    <div class="card-body">
+                        <h4 class="card-title"><?php echo $resultat[4]["name"]; ?></h4>
+                        <p class="card-description"><?php echo $resultat[4]["skills"]; ?></p>
+                    </div>
                 </div>
-            </div>
-            <div class="card p-3">
-            <img src=<?php echo $resultat[5]["image"]; ?>>
-                <h4 class="card-title"><?php echo $resultat[5]["name"]; ?></h4>
-                <!-- Card content -->
-            </div>
-            <div class="card">
-                <div class="card-body">
+
+                <div class="card">
+                <img src=<?php echo $resultat[5]["image"]; ?>>
+                    <div class="card-body">
+                        <h4 class="card-title"><?php echo $resultat[5]["name"]; ?></h4>
+                        <p class="card-description"><?php echo $resultat[5]["skills"]; ?></p>
+                    </div>
+                </div>
+
+                <div class="card">
                 <img src=<?php echo $resultat[6]["image"]; ?>>
-                <h4 class="card-title"><?php echo $resultat[6]["name"]; ?></h4>
-                <!-- Card content -->
+                    <div class="card-body">
+                        <h4 class="card-title"><?php echo $resultat[6]["name"]; ?></h4>
+                        <p class="card-description"><?php echo $resultat[6]["skills"]; ?></p>
+                    </div>
                 </div>
-            </div>
-            <div class="card p-3">
-            <img src=<?php echo $resultat[7]["image"]; ?>>
-                <h4 class="card-title"><?php echo $resultat[7]["name"]; ?></h4>
-                <!-- Card content -->
-            </div>
             </div>
         </html>
         </body>
