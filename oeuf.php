@@ -35,21 +35,21 @@ display($dataEgg);
 <body>
 <div class="card-deck">
     <div class="card">
-        <img  src=<?php echo $dataEgg[0]['image']; ?> alt=<?php echo $dataEgg[0]['name']; ?>>
+        <img class="card-img-top" src="<?php echo $dataEgg[0]['image']; ?>" alt="<?php echo $dataEgg[0]['name']; ?>" >
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title"><?php echo $dataEgg[0]['name']; ?></h5>
         </div>
     </div>
     <div class="card">
-        <img class="card-img-top" src=<?php echo $dataEgg[1]['image']; ?> alt=<?php echo $dataEgg[1]['name']; ?>>
+        <img class="card-img-top" src="<?php echo $dataEgg[1]['image']; ?>" alt="<?php echo $dataEgg[1]['name']; ?>" >
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title"><?php echo $dataEgg[1]['name']; ?></h5>
         </div>
     </div>
     <div class="card">
-        <img class="card-img-top" src=<?php echo $dataEgg[2]['image']; ?> alt=<?php echo $dataEgg[1]['name']; ?>>
+        <img class="card-img-top" src="<?php echo $dataEgg[2]['image']; ?>" alt="<?php echo $dataEgg[1]['name']; ?>" >
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title"><?php echo $dataEgg[2]['name']; ?></h5>
         </div>
     </div>
 </div>
