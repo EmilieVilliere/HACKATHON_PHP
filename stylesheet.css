@@ -23,7 +23,8 @@ img:not(.imgOeuf)
    flex-direction: row;
    justify-content: space-between;
    position:fixed;
-   bottom:0px;
+   bottom:0;
+   background-color:white;
 }
 .contenu{
    display : block;

@@ -19,7 +19,7 @@ $resultat = $charactersInfo->fetchAll();
     </head>
     <html>
     <body>
-
+    <?php include 'headBar.php' ?>
         <div class="container mb-5">
             <h3> Veuillez choisir un personnage</h3>
     <!-- Les cards de nos oeufs apparaissent ici -->
