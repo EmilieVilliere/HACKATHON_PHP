@@ -47,7 +47,7 @@ if ($_POST){
                     <span class= "contenu">           
                         <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
                     </span>
-                    <span>B</span>
+                    <span class = "lettre">B</span>
                     <span class= "contenu">
                         <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
                     </span>
