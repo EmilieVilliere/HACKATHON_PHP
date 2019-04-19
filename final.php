@@ -19,7 +19,7 @@ if(isset($_GET['power'])) {
 </head>
 <body>
     <div class="container">
-        <div class="card" style="width: 18rem;">
+        <div class="card">
             <img src="" class="card-img-top" alt="unPerso">
             <div class="card-body">
                 <img src=<?= $_SESSION["img"] ?> alt=<?= $_SESSION['name']; ?>>
@@ -30,7 +30,7 @@ if(isset($_GET['power'])) {
                 <p class="card-text"><?= $_SESSION['power3']; ?></p>
             </div>
         </div>
-    <?php include 'form.php' ?>
     </div>
+    <?php include 'footer.php' ?>
 </body>
 </html>

@@ -14,17 +14,17 @@ $resultat = $charactersInfo->fetchAll();
     <head>
     <meta charset="utf-8">
         <title>RPGEGGS</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="stylesheet.css">
+         <link rel="stylesheet" href="stylesheet.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
     <html>
     <body>
-        <div class="container">
 
+        <div class="container mb-5">
+            <h3> Veuillez choisir un personnage</h3>
     <!-- Les cards de nos oeufs apparaissent ici -->
             <div class="row m-auto d-inline-flex">
-                <div class="col">
+                <div class="col mb-5">
                     <a href=<?= "oeuf.php?name=".urlencode($resultat[0]['name'])."&skills=".urlencode($resultat[0]['skills'])."&img=".urlencode($resultat[0]["image"]) ?> class="card">
                         <div class="card">
                             <img src=<?php echo $resultat[0]["image"]; ?>>
@@ -35,7 +35,7 @@ $resultat = $charactersInfo->fetchAll();
                         </div>
                     </a>
                 </div>
-                <div class="col">
+                <div class="col mb-5">
                     <a href=<?= "oeuf.php?name=".urlencode($resultat[1]['name'])."&skills=".urlencode($resultat[1]['skills'])."&img=".urlencode($resultat[1]["image"]) ?> class="card">
                         <div class="card">
                             <img src=<?php echo $resultat[1]["image"]; ?>>
@@ -46,7 +46,7 @@ $resultat = $charactersInfo->fetchAll();
                         </div>
                     </a> 
                 </div>
-                <div class="col">
+                <div class="col mb-5">
                     <a href=<?= "oeuf.php?name=".urlencode($resultat[2]['name'])."&skills=".urlencode($resultat[2]['skills'])."&img=".urlencode($resultat[2]["image"]) ?> class="card">
                         <div class="card">
                             <img src=<?php echo $resultat[2]["image"]; ?>>
@@ -59,7 +59,7 @@ $resultat = $charactersInfo->fetchAll();
                 </div>
             </div>
             <div class="row d-inline-flex">
-                <div class="col">
+                <div class="col mb-5">
                     <a href=<?= "oeuf.php?name=".urlencode($resultat[3]['name'])."&skills=".urlencode($resultat[3]['skills'])."&img=".urlencode($resultat[3]["image"]) ?> class="card">
                         <div class="card">
                             <img src=<?php echo $resultat[3]["image"]; ?>>
@@ -70,7 +70,7 @@ $resultat = $charactersInfo->fetchAll();
                         </div>
                     </a>
                 </div>
-                <div class="col">
+                <div class="col mb-5">
                     <a href=<?= "oeuf.php?name=".urlencode($resultat[4]['name'])."&skills=".urlencode($resultat[4]['skills'])."&img=".urlencode($resultat[4]["image"]) ?> class="card">
                         <div class="card">
                             <img src=<?php echo $resultat[4]["image"]; ?>>
@@ -81,7 +81,7 @@ $resultat = $charactersInfo->fetchAll();
                         </div>
                     </a>
                 </div>
-                <div class="col">
+                <div class="col mb-5">
                     <a href=<?= "oeuf.php?name=".urlencode($resultat[5]['name'])."&skills=".urlencode($resultat[5]['skills'])."&img=".urlencode($resultat[5]["image"]) ?> class="card">
                         <div class="card">
                             <img src=<?php echo $resultat[5]["image"]; ?>>
@@ -94,7 +94,7 @@ $resultat = $charactersInfo->fetchAll();
                 </div>
             </div>
             <div class="row d-inline-flex">
-                <div class="col">
+                <div class="col mb-5">
                     <a href=<?= "oeuf.php?name=".urlencode($resultat[6]['name'])."&skills=".urlencode($resultat[6]['skills'])."&img=".urlencode($resultat[6]["image"]) ?> class="card">
                         <div class="card">
                             <img src=<?php echo $resultat[6]["image"]; ?>>
@@ -105,7 +105,7 @@ $resultat = $charactersInfo->fetchAll();
                         </div>
                     </a>
                 </div>
-                <div class="col">
+                <div class="col mb-5">
                     <a href=<?= "oeuf.php?name=".urlencode($resultat[7]['name'])."&skills=".urlencode($resultat[7]['skills'])."&img=".urlencode($resultat[7]["image"]) ?> class="card">
                         <div class="card">
                             <img src=<?php echo $resultat[7]["image"]; ?>>
@@ -116,7 +116,7 @@ $resultat = $charactersInfo->fetchAll();
                         </div>
                     </a>
                 </div>
-                <div class="col">
+                <div class="col mb-5">
                     <a href=<?= "oeuf.php?name=".urlencode($resultat[8]['name'])."&skills=".urlencode($resultat[8]['skills'])."&img=".urlencode($resultat[8]["image"]) ?> class="card">
                         <div class="card">
                             <img src=<?php echo $resultat[8]["image"]; ?>>

@@ -1,4 +1,4 @@
-img
+img:not(.imgOeuf)
 {
    width: 300px;
    height: 300px;
@@ -17,4 +17,26 @@ img
    justify-content: center;
    position: static;
    display: flex;
+}
+.oeuf{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   position:fixed;
+   bottom:0px;
+}
+.contenu{
+   display : block;
+   width : calc(100% /35);
+}
+.contenu img{
+   display : block;
+   width : 100%;
+   margin : 0 auto;
+}
+.lettre{
+   vertical-align: middle;
+}
+.lettre span{
+   width : 100%;
 }

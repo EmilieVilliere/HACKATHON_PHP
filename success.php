@@ -1,6 +1,6 @@
 <?php
 
-if (isset($_POST)){
+if ($_POST){
     if ($_POST['message']=='BADASS'){
         header("location:easterEgg.php");
         exit();
