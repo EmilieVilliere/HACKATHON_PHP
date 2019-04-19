@@ -63,11 +63,11 @@ if(isset($_GET['power'])) {
     </div>
 </div>
 <div class="text-center mt-3">
-    <p> Super ! </p> 
-    <p><?= $_SESSION['name'] ?>,  Voici tes caractéristiques : <?= $_SESSION['skills'] ?></p>
-    <p>Tu as obtenu ce pouvoir :<?= $_SESSION['power1'] ?> </p>
-    <p>tu peux continuer de l'utiliser à ta guise, peut être qu'avec </p>
-    <p>celui ci en plus : <?= $power ?> tu pourrais faire des miracles !</p>
+    <p class="gras"> Super ! <?= $_SESSION['name'] ?>,</p> 
+    <p class="mcdo"> Voici tes caractéristiques : <?= $_SESSION['skills'] ?></p>
+    <p class="frite">Tu as obtenu ce pouvoir :<?= $_SESSION['power1'] ?> </p>
+    <p class="frite">tu peux continuer de l'utiliser à ta guise, peut être qu'avec </p>
+    <p class="frite">celui ci en plus : <?= $power ?> tu pourrais faire des miracles !</p>
 </div>
 </body>
 

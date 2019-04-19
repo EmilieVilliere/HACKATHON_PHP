@@ -24,10 +24,10 @@ if(isset($_GET['power'])) {
                 <div class="text-center">
                     <img src=<?= $_SESSION["img"] ?> alt=<?= $_SESSION['name']; ?>>
                     <p class="card-text mt-5 gras"><?= $_SESSION['name']; ?></p>
-                    <p class="card-text"><?= $_SESSION['skills']; ?></p>
-                    <p class="card-text"><?= $_SESSION['power1']; ?></p>
-                    <p class="card-text"><?= $_SESSION['power2']; ?></p>
-                    <p class="card-text"><?= $_SESSION['power3']; ?></p>
+                    <p class="card-text mcdo"><?= $_SESSION['skills']; ?></p>
+                    <p class="card-text mcdo"><?= $_SESSION['power1']; ?></p>
+                    <p class="card-text mcdo"><?= $_SESSION['power2']; ?></p>
+                    <p class="card-text mcdo"><?= $_SESSION['power3']; ?></p>
                 </div>
             </div>
         <?php include 'footer.php' ?>
