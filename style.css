@@ -12,7 +12,9 @@
     width : 100%;
     margin : 0 auto;
 }
-#B {
-    display: table-cell;
+.lettre{
     vertical-align: middle;
+}
+.lettre span{
+    width : 100%;
 }
