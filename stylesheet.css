@@ -11,9 +11,10 @@ img:not(.imgOeuf)
    height: 300px;
    object-fit: cover;
 }
-a
+.card:hover
 {
    text-decoration: none;
+   color: black;
 }
 .card
 {
@@ -22,6 +23,8 @@ a
    display: flex;
    justify-content: center;
    object-fit: cover;
+   text-decoration: none;
+   color: black;
    
 }
  .h5
