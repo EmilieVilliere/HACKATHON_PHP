@@ -30,6 +30,7 @@ if(isset($_GET['power'])) {
                 <p class="card-text"><?= $_SESSION['power3']; ?></p>
             </div>
         </div>
+    <?php include 'form.php' ?>
     </div>
 </body>
 </html>

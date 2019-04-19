@@ -1,29 +1,6 @@
-<?php
-$error = array();
-if ($_POST){
-    if ($_POST['contact']!='badass' and $_POST['message']!='badass'){
-        $error['contact1'] = "a";
-    }
-    if (count($error)==0){
-        header("location:success.php");
-        exit();
-    }
-}
-$dbh = new \PDO('mysql:host=localhost;dbname=easter_eggs_hackaton;charset=utf8', 'root', '123');
-$requete = "SELECT image FROM egg LIMIT 29; ";
-$reponse = $dbh->query($requete);
-$resultat = $reponse->fetchAll();
-?>
-<!doctype html>
-<html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <title>footer</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-    <body>
+
         <footer>
-                <div class="oeuf">
+                <a href="success.php" class="oeuf">
                     <span class= "contenu">
                         <img src=<?php echo $resultat[0]["image"]; ?> alt='BADASS'>
                     </span>
@@ -111,20 +88,6 @@ $resultat = $reponse->fetchAll();
                     <span class= "contenu">
                         <img src=<?php echo $resultat[27]["image"]; ?>alt='BADASS'>
                     </span>
-            </div>
-            <div style = "text-align: center;">
-                <form action="footer.php" method="post" >
-                    <label for="name"></label>
-                    <input type="text"required id="name" name="contact">
-                    <br>
-                    <label for="msg">contactez-nous </label>
-                    <br>
-                    <textarea id="msg" name="message"></textarea>
-                    <div class="button">
-                        <button type="submit">Envoyer le message</button>
-                    </div>
-                </form>
-            </div>
+                </a>
+            
         </footer>
-    </body>
-</html>
