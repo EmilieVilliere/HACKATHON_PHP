@@ -9,6 +9,10 @@ if ($_POST){
         exit();
     }
 }
+$dbh = new \PDO('mysql:host=localhost;dbname=easter_eggs_hackaton;charset=utf8', 'root', '');
+$requete = "SELECT image FROM egg LIMIT 29; ";
+$reponse = $dbh->query($requete);
+$resultat = $reponse->fetchAll();
 ?>
 <!doctype html>
 <html lang="fr">
@@ -21,97 +25,97 @@ if ($_POST){
         <footer>
                 <div class="oeuf">
                     <span class= "contenu">
-                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                        <img src=<?php echo $resultat[0]["image"]; ?> alt='oeuf'>
                     </span>
                     <span class= "contenu">    
-                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                        <img src=<?php echo $resultat[1]["image"]; ?> alt='oeuf'>
                     </span>
                     <span class= "contenu">
-                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                        <img src=<?php echo $resultat[2]["image"]; ?> alt='oeuf'>
                     </span>
                     <span class= "contenu">
-                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                        <img src=<?php echo $resultat[3]["image"]; ?> alt='oeuf'>
                     </span>
                     <span class= "contenu">
-                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                        <img src=<?php echo $resultat[4]["image"]; ?> alt='oeuf'>
                     </span>
                     <span class= "contenu">
-                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                        <img src=<?php echo $resultat[5]["image"]; ?>alt='oeuf'>
                     </span>
                     <span class= "contenu">
-                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                        <img src=<?php echo $resultat[6]["image"]; ?> alt='oeuf'>
                     </span>
                     <span class= "contenu">
-                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                        <img src=<?php echo $resultat[7]["image"]; ?> alt='oeuf'>
                     </span>
                     <span class= "contenu">           
-                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                        <img src=<?php echo $resultat[8]["image"]; ?> alt='oeuf'>
                     </span>
-                    <span class = "lettre">B</span>
+                    <span>B</span>
                     <span class= "contenu">
-                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                        <img src=<?php echo $resultat[9]["image"]; ?> alt='oeuf'>
                     </span>
                     <span>A</span>
                     <span class= "contenu">
-                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                        <img src=<?php echo $resultat[10]["image"]; ?> alt='oeuf'>
                     </span>
                     <span class= "contenu">
-                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                        <img src=<?php echo $resultat[11]["image"]; ?> alt='oeuf'>
                     </span>
                     <span class= "contenu">
-                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                        <img src=<?php echo $resultat[12]["image"]; ?> alt='oeuf'>
                     </span>
                     <span class= "contenu">
-                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                        <img src=<?php echo $resultat[13]["image"]; ?> alt='oeuf'>
                     </span>
                     <span>D</span>
                     <span class= "contenu">                   
-                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                        <img src=<?php echo $resultat[14]["image"]; ?> alt='oeuf'>
                     </span>
                     <span class= "contenu">
-                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                        <img src=<?php echo $resultat[15]["image"]; ?>alt='oeuf'>
                     </span class= "contenu">
                     <span>A</span>
                     <span class= "contenu">
-                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                        <img src=<?php echo $resultat[16]["image"]; ?> alt='oeuf'>
                     </span>
                     <span class= "contenu">
-                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                        <img src=<?php echo $resultat[17]["image"]; ?> alt='oeuf'>
                     </span>
                     <span class= "contenu">
-                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                        <img src=<?php echo $resultat[18]["image"]; ?> alt='oeuf'>
                     </span>
                     <span class= "contenu">S</span>
                     <span class= "contenu">
-                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                        <img src=<?php echo $resultat[19]["image"]; ?> alt='oeuf'>
                     </span>
                     <span class= "contenu">
-                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                        <img src=<?php echo $resultat[20]["image"]; ?> alt='oeuf'>
                     </span>
                     <span>S</span>
                     <span class= "contenu">
-                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                        <img src=<?php echo $resultat[21]["image"]; ?> alt='oeuf'>
                     </span>
                     <span class= "contenu">
-                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                        <img src=<?php echo $resultat[22]["image"]; ?> alt='oeuf'>
                     </span>
                     <span class= "contenu">
-                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                        <img src=<?php echo $resultat[23]["image"]; ?> alt='oeuf'>
                     </span>
                     <span class= "contenu">
-                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                        <img src=<?php echo $resultat[24]["image"]; ?> alt='oeuf'>
                     </span>
                     <span class= "contenu">
-                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                        <img src=<?php echo $resultat[25]["image"]; ?> alt='oeuf'>
                     </span>
                     <span class= "contenu">
-                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                        <img src=<?php echo $resultat[26]["image"]; ?> alt='oeuf'>
                     </span>
                     <span class= "contenu">
-                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                        <img src=<?php echo $resultat[27]["image"]; ?> alt='oeuf'>
                     </span>
                     <span class= "contenu">
-                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9Rd6XyqDO5PXsbPzLfLTMErb6isGEWWl3yx0y2GLRmqGj2R9CA' alt='oeuf'>
+                        <img src=<?php echo $resultat[27]["image"]; ?>alt='oeuf'>
                     </span>
             </div>
             <div style = "text-align: center;">
