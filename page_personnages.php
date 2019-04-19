@@ -2,7 +2,7 @@
 
 session_start();
 
-$connection = new PDO("mysql:dbname=easter_eggs_hackaton;host=localhost", "root", "lOMELANGEE0803");
+$connection = new PDO("mysql:dbname=easter_eggs_hackaton;host=localhost", "root", "123");
 $requete ="SELECT name, image, skills FROM characters ORDER BY RAND() LIMIT 9;";
 $charactersInfo = $connection->query($requete);
 $resultat = $charactersInfo->fetchAll();

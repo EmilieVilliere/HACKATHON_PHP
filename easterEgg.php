@@ -8,9 +8,11 @@
     </head>
     <html>
         <body>
-            <iframe width="1280" height="720" src="https://www.youtube.com/embed/x0CJKvevs2M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <br>
-            <h1>Maintenant tu es Eggtama !</h1>
-            <h3>Plus rien ne t'arrêtes !</h3>
+            <div class ="text-center">
+                <iframe width="1280" height="720" src="https://www.youtube.com/embed/x0CJKvevs2M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <br>
+                <h1 class="mt-5">Maintenant tu es Eggtama !</h1>
+                <h3>Plus rien ne t'arrêtes !</h3>
+            </div>
         </body>
     </html>
