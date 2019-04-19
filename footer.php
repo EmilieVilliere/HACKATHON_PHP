@@ -1,11 +1,13 @@
 
 <?php
-$dbh = new \PDO('mysql:host=localhost;dbname=easter_eggs_hackaton;charset=utf8', 'root', '123');
+$dbh = new \PDO('mysql:host=localhost;dbname=easter_eggs_hackaton;charset=utf8', 'root', 'lOMELANGEE0803');
 $requete = "SELECT image FROM egg LIMIT 29; ";
 $reponse = $dbh->query($requete);
 $resultat = $reponse->fetchAll();
 ?>
         <footer>
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
+            <span title="steak haché !">
                 <a href="success.php" class="oeuf">
                     <span class= "contenu">
                         <img class="imgOeuf" src=<?php echo $resultat[0]["image"]; ?> alt='BADASS'>
@@ -95,5 +97,5 @@ $resultat = $reponse->fetchAll();
                         <img class="imgOeuf" src=<?php echo $resultat[27]["image"]; ?>alt='BADASS'>
                     </span>
                 </a>
-            
+            </span>
         </footer>

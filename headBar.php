@@ -1,5 +1,5 @@
-<nav class="navbar navbar-dark bg-primary">
-    <div class="text-white justify-content-center">
-        <h1>RPGEGGS !</h1>
+<nav class="navbar navbar-dark mb-5">
+    <div class="">
+        <a class="text-white" href="page_personnages.php"><h1>RPGEGGS !</h1></a>
     </div>
 </nav>

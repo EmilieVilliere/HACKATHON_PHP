@@ -2,7 +2,7 @@
 
 session_start();
 
-$connection = new PDO("mysql:dbname=easter_eggs_hackaton;host=localhost", "root", "123");
+$connection = new PDO("mysql:dbname=easter_eggs_hackaton;host=localhost", "root", "lOMELANGEE0803");
 $requete ="SELECT name, image, skills FROM characters ORDER BY RAND() LIMIT 9;";
 $charactersInfo = $connection->query($requete);
 $resultat = $charactersInfo->fetchAll();
@@ -14,14 +14,15 @@ $resultat = $charactersInfo->fetchAll();
     <head>
     <meta charset="utf-8">
         <title>RPGEGGS</title>
-         <link rel="stylesheet" href="stylesheet.css">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
+        <link rel="stylesheet" href="stylesheet.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
     <html>
     <body>
     <?php include 'headBar.php' ?>
-        <div class="container mb-5">
-            <h3> Veuillez choisir un personnage</h3>
+    <h3 class="text-center">(: Veuillez choisir un personnage :)</h3>
+        <div class="container mb-5 mt-5">
     <!-- Les cards de nos oeufs apparaissent ici -->
             <div class="row m-auto d-inline-flex">
                 <div class="col mb-5">

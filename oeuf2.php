@@ -9,7 +9,7 @@ function display($var) {
 
 $host = "localhost";
 $user = "root";
-$pass = "123";
+$pass = "lOMELANGEE0803";
 $dbname = "easter_eggs_hackaton";
 try {
     $BDD = new PDO('mysql:host='.$host.';dbname='.$dbname.';charset=utf8',$user,$pass);
@@ -31,6 +31,7 @@ if(isset($_GET['power'])) {
     <html lang="fr">
             <head>
                 <meta charset="UTF-8">
+                <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <meta http-equiv="X-UA-Compatible" content="ie=edge">
                 <link rel="stylesheet" href="stylesheet.css">
@@ -38,6 +39,7 @@ if(isset($_GET['power'])) {
                 <title>Document</title>
             </head>
             <body>
+            <?php include 'headBar.php' ?>
             <div class="container">
                 <div class="card-deck">
                     <a class="card" href=<?= "oeuf3.php?power=".urlencode($dataEgg[0]['power']); ?> >
@@ -60,10 +62,12 @@ if(isset($_GET['power'])) {
                     </a>
                 </div>
             </div>
-            <div class="text-center">
-                <p><?= $_SESSION['name'] ?>,  Voici tes caractéristiques : <?= $_SESSION['skills'] ?></p>
-                <p>Maintenant que tu as obtenu ce pouvoir : <?= $power ?> </p>
-                <p>tu peux continuer à tenter ta chance pour acquérir de nouveau skills.</p>
+            <div class="text-center mt-3">
+                <p class="gras"><?= $_SESSION['name'] ?></p> 
+                <p class="mcdo">Voici tes caractéristiques :</p>
+                <p><?= $_SESSION['skills'] ?></p>
+                <p class="mcdo">Maintenant que tu as obtenu ce pouvoir :</p> 
+                <p><?= $power ?> tu peux continuer à tenter ta chance pour acquérir de nouveau skills.</p>
             </div>
         </body>
         <?php include 'footer.php'; ?>

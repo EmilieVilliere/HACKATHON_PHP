@@ -9,7 +9,7 @@ function display($var) {
 
 $host = "localhost";
 $user = "root";
-$pass = "123";
+$pass = "lOMELANGEE0803";
 $dbname = "easter_eggs_hackaton";
 try {
     $BDD = new PDO('mysql:host='.$host.';dbname='.$dbname.';charset=utf8',$user,$pass);
@@ -38,6 +38,7 @@ if(isset($_GET['img'])) {
         <html lang="fr">
             <head>
                 <meta charset="UTF-8">
+                <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <meta http-equiv="X-UA-Compatible" content="ie=edge">
                 <link rel="stylesheet" href="stylesheet.css">
@@ -45,6 +46,7 @@ if(isset($_GET['img'])) {
                 <title>Document</title>
             </head>
             <body>
+            <?php include 'headBar.php' ?>
                 <div class="container">
                     <div class="card-deck">
                         <a class="card" href=<?= "oeuf2.php?power=".urlencode($dataEgg[0]['power']); ?> >
@@ -66,7 +68,9 @@ if(isset($_GET['img'])) {
                             </div>
                         </a>
                     </div>
-                    <p>Bienvenue <?= $name ?> ! Voici tes caractéristiques : <?= $skills ?></p>
+                </div>
+                <div class="text-center mt-5">
+                    <p class="gras">Bienvenue <?= $name ?> !</p> <p class="mcdo">Voici tes caractéristiques : <?= $skills ?></p>
                 </div>
             </body>
             <?php include 'footer.php'; ?>
