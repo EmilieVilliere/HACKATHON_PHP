@@ -1,4 +1,10 @@
 
+<?php
+$dbh = new \PDO('mysql:host=localhost;dbname=easter_eggs_hackaton;charset=utf8', 'root', '123');
+$requete = "SELECT image FROM egg LIMIT 29; ";
+$reponse = $dbh->query($requete);
+$resultat = $reponse->fetchAll();
+?>
         <footer>
                 <a href="success.php" class="oeuf">
                     <span class= "contenu">

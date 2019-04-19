@@ -1,16 +1,11 @@
 <?php
 
-if ($_POST){
+if (isset($_POST)){
     if ($_POST['message']=='BADASS'){
         header("location:easterEgg.php");
         exit();
     }
 }
-
-$dbh = new \PDO('mysql:host=localhost;dbname=easter_eggs_hackaton;charset=utf8', 'root', '123');
-$requete = "SELECT image FROM egg LIMIT 29; ";
-$reponse = $dbh->query($requete);
-$resultat = $reponse->fetchAll();
 ?>
 
 <!doctype html>
