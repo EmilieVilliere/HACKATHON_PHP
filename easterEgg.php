@@ -1,4 +1,1 @@
-
-    <video autoplay muted loop id="myVideo">
-        <source src="https://www.youtube.com/watch?v=x0CJKvevs2M" type="video/mp4">
-    </video>
+    <iframe width="1280" height="720" src="https://www.youtube.com/embed/x0CJKvevs2M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
