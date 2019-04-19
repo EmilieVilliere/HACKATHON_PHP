@@ -7,7 +7,7 @@ if(isset($_GET['power'])) {
 }
 ?>
 
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -21,6 +21,9 @@ if(isset($_GET['power'])) {
         <div class="card" style="width: 18rem;">
             <img src="" class="card-img-top" alt="unPerso">
             <div class="card-body">
+                <img src=<?= $_SESSION["img"] ?> alt=<?= $_SESSION['name']; ?>>
+                <p class="card-text"><?= $_SESSION['name']; ?></p>
+                <p class="card-text"><?= $_SESSION['skills']; ?></p>
                 <p class="card-text"><?= $_SESSION['power1']; ?></p>
                 <p class="card-text"><?= $_SESSION['power2']; ?></p>
                 <p class="card-text"><?= $_SESSION['power3']; ?></p>

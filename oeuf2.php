@@ -9,7 +9,7 @@ function display($var) {
 
 $host = "localhost";
 $user = "root";
-$pass = "lOMELANGEE0803";
+$pass = "123";
 $dbname = "easter_eggs_hackaton";
 try {
     $BDD = new PDO('mysql:host='.$host.';dbname='.$dbname.';charset=utf8',$user,$pass);
@@ -60,7 +60,7 @@ if(isset($_GET['power'])) {
                 </div>
             </div>
             <div class="text-center">
-                <p> Bravo !</p>
+                <p><?= $_SESSION['name'] ?>,  Voici tes caractéristiques : <?= $_SESSION['skills'] ?></p>
                 <p>Maintenant que tu as obtenu ce pouvoir : <?= $power ?> </p>
                 <p>tu peux continuer à tenter ta chance pour acquérir de nouveau skills.</p>
             </div>

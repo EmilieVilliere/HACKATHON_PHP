@@ -9,7 +9,7 @@ function display($var) {
 
 $host = "localhost";
 $user = "root";
-$pass = "";
+$pass = "123";
 $dbname = "easter_eggs_hackaton";
 try {
     $BDD = new PDO('mysql:host='.$host.';dbname='.$dbname.';charset=utf8',$user,$pass);
@@ -21,6 +21,18 @@ $reponseEgg = $BDD->prepare($requestEgg);
 $reponseEgg->execute();
 $dataEgg = $reponseEgg->fetchAll();
 
+if(isset($_GET['name'])) {
+    $name = urldecode($_GET['name']);
+    $_SESSION['name'] = $name;
+}
+if(isset($_GET['skills'])) {
+    $skills = urldecode($_GET['skills']);
+    $_SESSION['skills'] = $skills;
+}
+if(isset($_GET['img'])) {
+    $img = urldecode($_GET['img']);
+    $_SESSION['img'] = $img;
+}
 ?>
     <!DOCTYPE html>
         <html lang="fr">
@@ -33,7 +45,7 @@ $dataEgg = $reponseEgg->fetchAll();
             </head>
             <body>
                 <div class="container">
-                        <div class="card-deck">
+                    <div class="card-deck">
                         <a class="card" href=<?= "oeuf2.php?power=".urlencode($dataEgg[0]['power']); ?> >
                             <img class="card-img-top" src="<?= $dataEgg[0]['image']; ?>" alt="<?php echo $dataEgg[0]['name']; ?>" >
                             <div class="card-body">
@@ -53,6 +65,7 @@ $dataEgg = $reponseEgg->fetchAll();
                             </div>
                         </a>
                     </div>
+                    <p>Bienvenue <?= $name ?> ! Voici tes caractéristiques : <?= $skills ?></p>
                 </div>
             </body>
         </html>

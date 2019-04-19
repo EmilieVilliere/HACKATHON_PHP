@@ -2,7 +2,7 @@
 
 session_start();
 
-$connection = new PDO("mysql:dbname=easter_eggs_hackaton;host=localhost", "root", "lOMELANGEE0803");
+$connection = new PDO("mysql:dbname=easter_eggs_hackaton;host=localhost", "root", "123");
 $requete ="SELECT name, image, skills FROM characters ORDER BY RAND() LIMIT 9;";
 $charactersInfo = $connection->query($requete);
 $resultat = $charactersInfo->fetchAll();
@@ -24,7 +24,7 @@ $resultat = $charactersInfo->fetchAll();
     <!-- Les cards de nos oeufs apparaissent ici -->
             <div class="row m-auto d-inline-flex">
                 <div class="col">
-                    <a href=<?= "oeuf.php?name=".urlencode($resultat[0]['name'])."&skills=".urlencode($resultat[0]['skills']) ?> class="card">
+                    <a href=<?= "oeuf.php?name=".urlencode($resultat[0]['name'])."&skills=".urlencode($resultat[0]['skills'])."&img=".urlencode($resultat[0]["image"]) ?> class="card">
                         <div class="card">
                             <img src=<?php echo $resultat[0]["image"]; ?>>
                             <div class="card-body">
@@ -35,7 +35,7 @@ $resultat = $charactersInfo->fetchAll();
                     </a>
                 </div>
                 <div class="col">
-                    <a href=<?= "oeuf.php?name=".urlencode($resultat[1]['name'])."&skills=".urlencode($resultat[1]['skills']) ?> class="card">
+                    <a href=<?= "oeuf.php?name=".urlencode($resultat[1]['name'])."&skills=".urlencode($resultat[1]['skills'])."&img=".urlencode($resultat[1]["image"]) ?> class="card">
                         <div class="card">
                             <img src=<?php echo $resultat[1]["image"]; ?>>
                             <div class="card-body">
@@ -46,7 +46,7 @@ $resultat = $charactersInfo->fetchAll();
                     </a> 
                 </div>
                 <div class="col">
-                    <a href=<?= "oeuf.php?name=".urlencode($resultat[2]['name'])."&skills=".urlencode($resultat[2]['skills']) ?> class="card">
+                    <a href=<?= "oeuf.php?name=".urlencode($resultat[2]['name'])."&skills=".urlencode($resultat[2]['skills'])."&img=".urlencode($resultat[2]["image"]) ?> class="card">
                         <div class="card">
                             <img src=<?php echo $resultat[2]["image"]; ?>>
                             <div class="card-body">
@@ -59,7 +59,7 @@ $resultat = $charactersInfo->fetchAll();
             </div>
             <div class="row d-inline-flex">
                 <div class="col">
-                    <a href=<?= "oeuf.php?name=".urlencode($resultat[3]['name'])."&skills=".urlencode($resultat[3]['skills']) ?> class="card">
+                    <a href=<?= "oeuf.php?name=".urlencode($resultat[3]['name'])."&skills=".urlencode($resultat[3]['skills'])."&img=".urlencode($resultat[3]["image"]) ?> class="card">
                         <div class="card">
                             <img src=<?php echo $resultat[3]["image"]; ?>>
                             <div class="card-body">
@@ -70,7 +70,7 @@ $resultat = $charactersInfo->fetchAll();
                     </a>
                 </div>
                 <div class="col">
-                    <a href=<?= "oeuf.php?name=".urlencode($resultat[4]['name'])."&skills=".urlencode($resultat[4]['skills']) ?> class="card">
+                    <a href=<?= "oeuf.php?name=".urlencode($resultat[4]['name'])."&skills=".urlencode($resultat[4]['skills'])."&img=".urlencode($resultat[4]["image"]) ?> class="card">
                         <div class="card">
                             <img src=<?php echo $resultat[4]["image"]; ?>>
                             <div class="card-body">
@@ -81,7 +81,7 @@ $resultat = $charactersInfo->fetchAll();
                     </a>
                 </div>
                 <div class="col">
-                    <a href=<?= "oeuf.php?name=".urlencode($resultat[5]['name'])."&skills=".urlencode($resultat[5]['skills']) ?> class="card">
+                    <a href=<?= "oeuf.php?name=".urlencode($resultat[5]['name'])."&skills=".urlencode($resultat[5]['skills'])."&img=".urlencode($resultat[5]["image"]) ?> class="card">
                         <div class="card">
                             <img src=<?php echo $resultat[5]["image"]; ?>>
                             <div class="card-body">
@@ -94,7 +94,7 @@ $resultat = $charactersInfo->fetchAll();
             </div>
             <div class="row d-inline-flex">
                 <div class="col">
-                    <a href=<?= "oeuf.php?name=".urlencode($resultat[6]['name'])."&skills=".urlencode($resultat[6]['skills']) ?> class="card">
+                    <a href=<?= "oeuf.php?name=".urlencode($resultat[6]['name'])."&skills=".urlencode($resultat[6]['skills'])."&img=".urlencode($resultat[6]["image"]) ?> class="card">
                         <div class="card">
                             <img src=<?php echo $resultat[6]["image"]; ?>>
                             <div class="card-body">
@@ -105,7 +105,7 @@ $resultat = $charactersInfo->fetchAll();
                     </a>
                 </div>
                 <div class="col">
-                    <a href=<?= "oeuf.php?name=".urlencode($resultat[7]['name'])."&skills=".urlencode($resultat[7]['skills']) ?> class="card">
+                    <a href=<?= "oeuf.php?name=".urlencode($resultat[7]['name'])."&skills=".urlencode($resultat[7]['skills'])."&img=".urlencode($resultat[7]["image"]) ?> class="card">
                         <div class="card">
                             <img src=<?php echo $resultat[7]["image"]; ?>>
                             <div class="card-body">
@@ -116,7 +116,7 @@ $resultat = $charactersInfo->fetchAll();
                     </a>
                 </div>
                 <div class="col">
-                    <a href=<?= "oeuf.php?name=".urlencode($resultat[8]['name'])."&skills=".urlencode($resultat[8]['skills']) ?> class="card">
+                    <a href=<?= "oeuf.php?name=".urlencode($resultat[8]['name'])."&skills=".urlencode($resultat[8]['skills'])."&img=".urlencode($resultat[8]["image"]) ?> class="card">
                         <div class="card">
                             <img src=<?php echo $resultat[8]["image"]; ?>>
                             <div class="card-body">
